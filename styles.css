@@ -8,6 +8,10 @@ and open the template in the editor.
     Author     : anton
 */
 
+
+
+/*global elements*/
+
 body {
     
 }
@@ -16,6 +20,11 @@ nav {
     justify-content: flex-end;
     position: absolute;
     width: 572px;
+}
+
+.logo {
+    height: 30.4px;
+    width: 120px;
 }
 
 .navbar {
@@ -42,20 +51,6 @@ button {
     margin-right: 20px;
 }
 
-.bed-pillow-button {
-    padding: 10px;
-    background-color: #838BCF;
-    font-family: "Playfair Display";
-    color: #EEEEEE;
-    font-size: 16px;
-    border-style: none;
-    border-radius: 4px;
-    margin-right: 20px;
-    text-decoration: none;
-    text-align: center;
-}
-
-
 h1{
     font-family: "Playfair Display";
     font-size: 60px;
@@ -78,30 +73,101 @@ p {
     padding-right:80px;
 }
 
-#hero-text-container {
-    text-align: left; 
-    position: relative;
-    margin-top: 150px;
-}
-
 .hero-left {
     margin-right: 100px;
     width: 500px;
     height: 750px;
 }
 
-#hero-left-2 {
-    margin-right: 100px;
-    width: 500px;
+.nav-item {
+    margin-right: 50px;
+    font-family: "Playfair Display";
+    font-size: 20px;
+    color: #808080;
+    text-decoration: none;
+}
+
+.open-sans-24px {
+    font-family: "Open Sans";
+    font-size: 24px;
+}
+
+.open-sans-20px-white {
+    font-family: "Open Sans";
+    font-size: 16px;
+    color: white;
+}
+
+.open-sans-16px {
+    font-family: "Open Sans";
+    font-size: 16px;
+}
+
+.open-sans-14px {
+    font-family: "Open Sans";
+    font-size: 14px;
+    color: #808080;
+    margin-left: 10px;
+}
+
+.playfair-16px {
+    font-family: "Playfair Display";
+    font-size: 20px;
+}
+
+.Playfair-16px-white {
+    font-family: "Playfair Display";
+    font-size: 20px;
+    color: white;
+}
+
+
+.heading-no-margin {
+    font-family: "Playfair Display";
+    font-size: 50px;
+    margin-bottom: 15px;
+    margin-top: 0px;
+}
+
+.footer {
+    padding: 80px;
+    background-color: #C4C4C4;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 80px;
+}
+
+.footer2 {
+    padding: 80px;
+    background-color: #C4C4C4;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.menu-items {
+    margin-right: 150px;
+}
+
+.menu-container {
+    display: inline-flex;
+}
+
+.h2-footer {
+    color: #5E4841;
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
+
+/*Home Page*/
+
+#handmade {
+    color: #B29889;
 }
 
 #for-your-home {
     margin-top: -50px;
     margin-bottom: 30px;
-}
-
-#handmade {
-    color: #B29889;
 }
 
 #brown-line {
@@ -121,26 +187,17 @@ p {
     display: inline-flex;
 }
 
-
-#home-decription {
-    max-width: 572px;
-}
-
-.pillow-link-home {
+.bed-pillow-button {
+    padding: 10px;
+    background-color: #838BCF;
     font-family: "Playfair Display";
-    font-size: 20px;
-    color: #838BCF;
-    max-width: 87px;
+    color: #EEEEEE;
+    font-size: 16px;
+    border-style: none;
+    border-radius: 4px;
+    margin-right: 20px;
+    text-decoration: none;
     text-align: center;
-    text-decoration: none;   
-}
-
-.pillow-divider {
-    background-color: #8D8D8D;
-    height: 40px;
-    width: 3px;
-    margin-right: 16px;
-    margin-left: 16px;
 }
 
 #flouf-pillow {
@@ -155,15 +212,41 @@ p {
 }
 
 
-
-.nav-item {
-    margin-right: 50px;
-    font-family: "Playfair Display";
-    font-size: 20px;
-    color: #808080;
-    text-decoration: none;
+#hero-text-container {
+    text-align: left; 
+    position: relative;
+    margin-top: 150px;
 }
 
+
+#home-decription {
+    max-width: 572px;
+}
+
+/*.pillow-link-home {
+    font-family: "Playfair Display";
+    font-size: 20px;
+    color: #838BCF;
+    max-width: 87px;
+    text-align: center;
+    text-decoration: none;   
+}
+*/
+
+/*.pillow-divider {
+    background-color: #8D8D8D;
+    height: 40px;
+    width: 3px;
+    margin-right: 16px;
+    margin-left: 16px;
+}
+*/
+
+
+#hero-left-2 {
+    margin-right: 100px;
+    width: 500px;
+}
 
 
 #hero-image-right {
@@ -177,6 +260,7 @@ p {
 }
 
 
+/*Product Page*/
 
 #product-rating-price {
     display: flex;
@@ -185,21 +269,6 @@ p {
     margin-bottom: -20px;
 }
 
-.open-sans-24px {
-    font-family: "Open Sans";
-    font-size: 24px;
-}
-
-.open-sans-20px-white {
-    font-family: "Open Sans";
-    font-size: 16px;
-    color: white;
-}
-
-.open-sans-16px {
-    font-family: "Open Sans";
-    font-size: 16px;
-}
 
 .detail-section {
     margin-right: 50px;
@@ -229,19 +298,6 @@ p {
     margin-left: 50px;
 }
 
-.open-sans-14px {
-    font-family: "Open Sans";
-    font-size: 14px;
-    color: #808080;
-    margin-left: 10px;
-}
-
-.heading-no-margin {
-    font-family: "Playfair Display";
-    font-size: 50px;
-    margin-bottom: 15px;
-    margin-top: 0px;
-}
 
 .dropdown-sizing {
     width: 30px;
@@ -298,12 +354,6 @@ p {
     margin-right: 80px;
 }
 
-.playfair-16px {
-    font-family: "Playfair Display";
-    font-size: 20px;
-}
-
-
 .item-card {
    
     margin-left: 50px;
@@ -355,11 +405,6 @@ p {
     background-color: #B29889;
 }
 
-.Playfair-16px-white {
-    font-family: "Playfair Display";
-    font-size: 20px;
-    color: white;
-}
 
 .YMAL {
     font-family: "Playfair Display";
@@ -368,6 +413,8 @@ p {
     margin-top: 0px;
     color: white;
 }
+
+/*Catalog*/
 
 .hero-container-catalog {
     justify-content: center;
@@ -417,36 +464,4 @@ p {
     font-weight: 800;
 }
 
-.logo {
-    height: 30.4px;
-    width: 120px;
-}
 
-.footer {
-    padding: 80px;
-    background-color: #C4C4C4;
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 80px;
-}
-
-.footer2 {
-    padding: 80px;
-    background-color: #C4C4C4;
-    display: flex;
-    justify-content: flex-start;
-}
-
-.menu-items {
-    margin-right: 150px;
-}
-
-.menu-container {
-    display: inline-flex;
-}
-
-.h2-footer {
-    color: #5E4841;
-    font-size: 32px;
-    margin-bottom: 50px;
-}
