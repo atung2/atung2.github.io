@@ -22,6 +22,45 @@ nav {
     width: 572px;
 }
 
+.top-right {
+    position: absolute;
+    display: inline-flex;
+    left: 70%;
+    align-items: center;
+}
+
+#top-right-home {
+    position: absolute;
+    display: inline-flex;
+    left: 70%;
+    top: 50px;
+}
+
+
+.icon-nav-left {
+    height: 75px;
+    width: 79px;
+    position: relative;
+}
+
+#shopping-cart {
+    margin-left: -10px;
+    position: relative;
+    z-index: 3;
+    cursor: pointer;
+}
+
+#shopping-cart-number {
+    margin-left: -10px;
+    position: relative;
+    z-index: 3;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    right: 25px;
+    top: 15px;
+    display: none;
+}
 .logo {
     height: 30.4px;
     width: 120px;
@@ -40,6 +79,10 @@ nav {
     text-decoration: none;
 }
 
+label {
+    font-family: "Open Sans";
+    font-size: 16px;
+}
 button {
     padding: 10px;
     background-color: #838BCF;
@@ -49,6 +92,8 @@ button {
     border-style: none;
     border-radius: 4px;
     margin-right: 20px;
+    margin-left: 40px;
+    cursor: pointer;
 }
 
 h1{
@@ -121,6 +166,11 @@ p {
     color: white;
 }
 
+.playfair-20px {
+    font-size: 24px;
+    font-family: "Playfair Display";
+}
+
 
 .heading-no-margin {
     font-family: "Playfair Display";
@@ -158,6 +208,10 @@ p {
     margin-bottom: 50px;
 }
 
+.hero-right {
+   position: relative;
+   width: 900px;
+}
 
 /*Home Page*/
 
@@ -257,12 +311,13 @@ p {
     width: 900px;
     margin-right: -110px;
     margin-top: -50px;
+    position: relative;
 }
 
 
 /*Product Page*/
 
-#product-rating-price {
+.product-rating-price {
     display: flex;
     align-items: center;
     margin-top: -20px;
@@ -305,7 +360,7 @@ p {
     margin-left: 5px;
 }
 
-#dropdowns-materials {
+.dropdowns-materials {
     font-family: "Playfair Display";
     font-size: 20px;
     margin-left: 50px;
@@ -317,12 +372,10 @@ p {
 }
 
 #product-image {
-    background-image: url('assets/bombay.jpg');
     height: 460px;
     width: 580px;
     border-radius: 10px;
-    background-position: center;
-    background-size: cover;
+    object-fit: cover;
     margin-right: 100px;
     margin-top: 40px;
 }
@@ -464,4 +517,148 @@ p {
     font-weight: 800;
 }
 
+/* Cart Page */
 
+/* #overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255,255,255,.5);
+  z-index: 2;
+  display: none;
+}
+*/
+
+.cart-container {
+    padding: 30px;
+    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+    border-radius: 8px;
+    background-color: white;
+    width: 500px;
+    height: 600px;
+    position: relative;
+    left: 30%;
+    top: 75px;
+}
+
+.product-details-cart {
+    display: flex;
+    align-items: center;
+}
+
+.cart-thumbnail {
+    width: 300px;
+    height:200px;
+    border-radius: 4px;
+    object-fit: cover;
+    margin-right: 100px;
+}
+
+.item-cart {
+    align-content: flex-start;
+}
+
+.cancel-item-cart {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 90%;
+}
+
+.cart-first-line {
+    display: flex;
+    align-items: center;
+    
+}
+
+.cart-second-line {
+}
+
+.cart-third-line {
+    display: inline-flex;
+    margin-top: 40px;
+}
+
+.cart-quantity {
+    display: flex;
+    align-items: center;
+}
+
+.cart-price {
+   position: absolute;
+   left: 82%;
+   display: flex;
+   align-content: flex-end;
+}
+
+.cart-price-text {
+   font-family: "Playfair Display";
+   font-size: 24px;
+   font-weight:600;
+}
+
+.dropdowns-materials-cart {
+    font-family: "Playfair Display";
+    font-size: 20px;
+}
+
+.dropdown-sizing-cart {
+    width: 17.5px;
+    height: 17.5px;
+    margin-left: 5px;
+}
+
+.adjust {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.remove {
+    margin-right: 8px;
+    color: #838BCF;
+}
+
+.add {
+    margin-left: 8px;
+    color: #838BCF;
+    cursor: pointer;
+}
+
+.remove {
+    cursor: pointer;
+}
+
+#counter {
+    font-family: "Playfair Display";
+    font-size: 18px;
+}
+
+.color-material {
+    display: inline-flex;
+}
+
+.color-selector {
+    display: flex;
+    align-content: flex-start;
+    margin-right: 40px;
+}
+
+#hero-container-cart {
+    padding-left: 80px;
+    padding-right:80px;
+    margin-top: 80px;
+}
+
+.checkout-button {
+}
+
+#button-move-to-cart {
+    margin-top: 80px;
+    display: flex;
+    justify-content: flex-end;
+}
