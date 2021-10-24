@@ -46,7 +46,7 @@ function displayPicture(box){
 	var pillowPicture = new Array(3);
         
 	pillowPicture[0] = "assets/bombay.jpg";
-	pillowPicture[1] = "assets/amsterdam.jpg";
+	pillowPicture[1] = "assets/Amsterdam.jpg";
 	pillowPicture[2] = "assets/silk linen 2.jpg";
 	pillowPicture[3] = "assets/whitepillow.jpg";
 	document.getElementById('product-image').src = pillowPicture[parseInt(box.value)];
