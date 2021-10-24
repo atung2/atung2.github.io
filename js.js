@@ -43,7 +43,7 @@ function calculatePrice() {
 
 function displayPicture(box){
 	
-	var pillowPicture = new Array(3);
+	var pillowPicture = new Array(5);
         
 	pillowPicture[0] = "assets/bombay.jpg";
 	pillowPicture[1] = "assets/Amsterdam.jpg";
